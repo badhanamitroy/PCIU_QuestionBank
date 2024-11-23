@@ -1,0 +1,167 @@
+/* cse.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.course-section {
+    margin: 20px auto;
+    max-width: 90%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    overflow-x: auto; /* Add scrollability */
+}
+
+.course-section::-webkit-scrollbar {
+    height: 8px;
+}
+
+.course-section::-webkit-scrollbar-thumb {
+    background: #f39c12;
+    border-radius: 10px;
+}
+
+.course-section::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.course-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #f39c12;
+    font-weight: bold;
+}
+
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    min-width: 700px; /* Ensure minimum table width for scrolling */
+    white-space: nowrap; /* Prevent table content from wrapping */
+}
+
+.course-table thead th {
+    background-color: #4a4a4a;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.course-table tbody tr {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.course-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.course-table td,
+.course-table th {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.course-table a {
+    color: #f39c12;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.course-table a:hover {
+    color: #d35400;
+}
+
+button {
+    background-color: #f39c12;
+    color: #4a4a4a;
+    padding: 10px 20px;
+    margin: 20px auto;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: translateY(-5px);
+    background-color: #d35400;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .course-title {
+        font-size: 1.3em;
+    }
+
+    .course-table th,
+    .course-table td {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .course-title {
+        font-size: 1.2em;
+    }
+
+    .course-section {
+        padding: 10px;
+    }
+
+    .course-table {
+        min-width: 600px; /* Ensure smaller minimum width for easier scrolling on phones */
+        font-size: 0.8em;
+    }
+
+    button {
+        font-size: 0.8em;
+    }
+}
