@@ -30,7 +30,7 @@ body {
 }
 
 .logo img {
-    width: 12vw;
+    width: 7vw;
     max-width: 150px;
     height: auto;
     margin-bottom: 10px;
@@ -73,7 +73,7 @@ h1 {
 }
 
 /* Upload Button */
-.upload a {
+.upload a,.howto a {
     display: inline-block;
     background: #f39c12;
     color: #fff;
@@ -85,8 +85,17 @@ h1 {
     transition: background 0.3s ease;
 }
 
-.upload a:hover {
-    background: #d35400;
+.howto a{
+    margin-top: 10px;
+    background: #0f015d;
+}
+
+.upload a:hover{
+    background: #8b3902;
+}
+
+.howto a:hover{
+    background: #1e07cc;
 }
 
 /* Footer */
